@@ -1,10 +1,10 @@
 version: '3.9'
- 
+
 services:
   web:
-    image: ${IMAGE_URI}
-    #build: .
+    image: vishwacloudlab/stackdemo
+    build: .
     ports:
-      - "8006:8000"
+      - "8000:8000"
   redis:
     image: redis:alpine
